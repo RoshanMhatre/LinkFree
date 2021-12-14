@@ -1,39 +1,63 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { Chip } from 'primereact/chip'
-import { InputText } from 'primereact/inputtext'
+import { Message } from 'primereact/message'
 
-function User({ list }) {
+import Navbar from '../Navbar'
+import Searchbar from './Searchbar'
+import utils from '../../utils'
+
+function Users({ list }) {
   const [searchTerm, setSearchTerm] = useState('')
+  const [filteredList, setFilteredList] = useState(list)
+
+  const searchHandler = (value) => {
+    setSearchTerm(value || '')
+    setFilteredList(
+      list.filter((User) =>
+        User.name
+          .normalize('NFD')
+          .toLowerCase()
+          .includes(value.normalize('NFD').toLowerCase()),
+      ),
+    )
+  }
+
   return (
     <>
-      <div className="search-section">
-        <span className="p-input-icon-left">
-          <i className="pi pi-search" />
-          <InputText
-            value={searchTerm}
-            onChange={({ target }) => setSearchTerm(target.value)}
-            name="user"
-            id="search-input"
-            placeholder="Search..."
-          />
-        </span>
+      <Navbar
+        start={
+          <Searchbar searchTerm={searchTerm} searchHandler={searchHandler} />
+        }
+      />
+      <div className="user-list p-d-flex p-flex-wrap p-jc-center">
+        {!!filteredList &&
+          filteredList.length > 0 &&
+          filteredList.map((user, key) => (
+            <Link to={user.username} key={`avatar-${key}`}>
+              <Chip
+                image={user.avatar}
+                className="p-m-2"
+                label={user.name}
+                onImageError={(error) => {
+                  utils.setDefaultSVG(user.name, error)
+                }}
+              />
+            </Link>
+          ))}
+        {!!filteredList && filteredList.length === 0 && (
+          <div className="p-d-flex p-jc-center p-ai-center">
+            <Message severity="error" text="No users found, please try with another name." />
+          </div>
+        )}
       </div>
-      {list
-        .filter((User) =>
-          User.name.toLowerCase().includes(searchTerm.toLowerCase()),
-        )
-        .map((user, key) => (
-          <a href={`${user.username}`} key={`avatar-${key}`}>
-            <Chip image={user.avatar} className="p-m-2" label={user.name} />
-          </a>
-        ))}
     </>
   )
 }
 
-User.propTypes = {
+Users.propTypes = {
   list: PropTypes.array.isRequired,
 }
 
-export default User
+export default Users

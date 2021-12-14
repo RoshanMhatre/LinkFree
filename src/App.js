@@ -1,22 +1,22 @@
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 import 'primereact/resources/themes/saga-blue/theme.css'
 import 'primereact/resources/primereact.min.css'
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
 import Footer from './Components/Footer'
-import Socials from './Components/Socials'
+import User from './Components/UserProfile/User'
 import Home from './Components/Home/Home'
 
 function App() {
   return (
     <Router>
-      <div className="p-m-4">
+      <div className="p-m-2 p-m-md-4">
         <Switch>
           <Route path="/:username">
-            <Socials />
+            <User />
           </Route>
           <Route path="/">
             <Home />

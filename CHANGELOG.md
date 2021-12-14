@@ -1,45 +1,45 @@
-## [0.36.2](https://github.com/EddieHubCommunity/LinkFree/compare/v0.36.1...v0.36.2) (2021-10-23)
+## [0.50.12](https://github.com/EddieHubCommunity/LinkFree/compare/v0.50.11...v0.50.12) (2021-12-14)
 
 
 ### Bug Fixes
 
-* removed search title ([#565](https://github.com/EddieHubCommunity/LinkFree/issues/565)) ([1c12a1d](https://github.com/EddieHubCommunity/LinkFree/commit/1c12a1d78bcbfee5e2046bc994fccfbe7de52b1a))
+* Abhinav Dubey ([#806](https://github.com/EddieHubCommunity/LinkFree/issues/806)) ([540452f](https://github.com/EddieHubCommunity/LinkFree/commit/540452f727e378596c03a220052e750b0f84ba0b))
 
 
 
-## [0.36.1](https://github.com/EddieHubCommunity/LinkFree/compare/v0.36.0...v0.36.1) (2021-10-23)
-
-
-### Bug Fixes
-
-* frankiefab100 ([#576](https://github.com/EddieHubCommunity/LinkFree/issues/576)) ([ef72651](https://github.com/EddieHubCommunity/LinkFree/commit/ef72651b4c8a06a4ff5e7a32a2c601ba3a3d559f))
-
-
-
-# [0.36.0](https://github.com/EddieHubCommunity/LinkFree/compare/v0.35.7...v0.36.0) (2021-10-23)
-
-
-### Features
-
-* search icon for input ([#577](https://github.com/EddieHubCommunity/LinkFree/issues/577)) ([6b638cf](https://github.com/EddieHubCommunity/LinkFree/commit/6b638cf4b3d75c7a166521f128dc7b1992e72614))
-
-
-
-## [0.35.7](https://github.com/EddieHubCommunity/LinkFree/compare/v0.35.6...v0.35.7) (2021-10-23)
+## [0.50.11](https://github.com/EddieHubCommunity/LinkFree/compare/v0.50.10...v0.50.11) (2021-12-13)
 
 
 ### Bug Fixes
 
-* icons into config file ([#551](https://github.com/EddieHubCommunity/LinkFree/issues/551)) ([cfa16e1](https://github.com/EddieHubCommunity/LinkFree/commit/cfa16e17cae0d3a9b07c4a060348531a11653c3a))
+* **data:** add Tejas profile ([#804](https://github.com/EddieHubCommunity/LinkFree/issues/804)) ([57c31b9](https://github.com/EddieHubCommunity/LinkFree/commit/57c31b9d2cfc06fafa0464dbb2374356e33bd0df))
 
 
 
-## [0.35.6](https://github.com/EddieHubCommunity/LinkFree/compare/v0.35.5...v0.35.6) (2021-10-22)
+## [0.50.10](https://github.com/EddieHubCommunity/LinkFree/compare/v0.50.9...v0.50.10) (2021-12-12)
 
 
 ### Bug Fixes
 
-* ashishshaji ([#569](https://github.com/EddieHubCommunity/LinkFree/issues/569)) ([a3b435d](https://github.com/EddieHubCommunity/LinkFree/commit/a3b435d395ba5ba03cf92ecff60c0af13ae812bc))
+* add Amr Monier ([#799](https://github.com/EddieHubCommunity/LinkFree/issues/799)) ([fdda350](https://github.com/EddieHubCommunity/LinkFree/commit/fdda350b7a5e2608a90282e27a0082a6f88e092a))
+
+
+
+## [0.50.9](https://github.com/EddieHubCommunity/LinkFree/compare/v0.50.8...v0.50.9) (2021-12-10)
+
+
+### Bug Fixes
+
+* add The Algorithms ([#797](https://github.com/EddieHubCommunity/LinkFree/issues/797)) ([e3e0625](https://github.com/EddieHubCommunity/LinkFree/commit/e3e062501a00c4431af7642ad422a30d233550f4))
+
+
+
+## [0.50.8](https://github.com/EddieHubCommunity/LinkFree/compare/v0.50.7...v0.50.8) (2021-12-10)
+
+
+### Bug Fixes
+
+* add missing comma ([#794](https://github.com/EddieHubCommunity/LinkFree/issues/794)) ([78316b2](https://github.com/EddieHubCommunity/LinkFree/commit/78316b2a1e85c1e0fa8ed470fb4be2e212cf5b28)), closes [#792](https://github.com/EddieHubCommunity/LinkFree/issues/792)
 
 
 

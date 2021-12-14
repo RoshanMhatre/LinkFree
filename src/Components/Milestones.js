@@ -22,7 +22,11 @@ function Milestones({ milestones }) {
   )
 
   const content = (milestone) => (
-    <Card title={milestone.title} subTitle={milestone.date} className="p-m-5">
+    <Card
+      title={milestone.title}
+      subTitle={milestone.date}
+      className="p-my-5 p-mx-md-5 p-shadow-15"
+    >
       {milestone.image && (
         <img
           src={milestone.image}
@@ -40,6 +44,8 @@ function Milestones({ milestones }) {
           <Button
             label="Learn more"
             icon="pi pi-check"
+            role="link"
+            rel="noopener noreferrer"
             className="p-button-raised p-button-rounded"
             onClick={() => goToLinkHandle(milestone.url)}
             style={{ backgroundColor: milestone.color }}
@@ -51,7 +57,7 @@ function Milestones({ milestones }) {
 
   return (
     <section className="p-d-flex p-jc-center p-mb-5">
-      <div style={{ width: 70 + '%' }}>
+      <div className="p-md-8">
         <Timeline
           value={milestones}
           align="alternate"
